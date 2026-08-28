@@ -20,11 +20,8 @@ graph TD
         C[<b>RDL_Core</b><br>基底仮設・最低動作仕様・基本代謝] 
     end
 
-    subgraph T1.5: Functions (関数・翻訳層)
-        F[<b>RDL_Functions</b><br>外部理論の翻訳エンジン・汎用計算モジュール]
-    end
-
     subgraph T2: Modules
+        F[<b>RDL_Functions</b><br>外部理論の翻訳エンジン・汎用計算モジュール]
         M[<b>RDL_Durability_Modules</b><br>耐久検査・証明書発行機関]
     end
 
@@ -48,7 +45,7 @@ graph TD
 RDLのすべての土台。基底仮設（B, ξ）、基本代謝プロセス（SILN）、共通語彙を保持するコア。
 ★ はじめての方は、ここにある [**関係力学言語とは如何なるものか（宣言）**](https://github.com/Aporapeiron/RDL_Core/blob/main/00_関係力学言語とは如何なるものか_宣言.md) からお読みください。
 
-### 2. [RDL_Functions](https://github.com/Aporapeiron/RDL_Functions) (T1.5)
+### 2. [RDL_Functions](https://github.com/Aporapeiron/RDL_Functions) (T2)
 既存の数学、物理学、AI技術（Neural Network等）を RDL の力学へ持ち込み、どこでも使える「関数（部品）」としてストック・提供する純粋な翻訳エンジンおよび汎用モジュール庫。
 
 ### 3. [RDL_Durability_Modules](https://github.com/Aporapeiron/RDL_Durability_Modules) (T2)
