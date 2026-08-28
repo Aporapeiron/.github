@@ -23,6 +23,7 @@ graph TD
     subgraph T2: Modules
         F[<b>RDL_Functions</b><br>外部理論の翻訳エンジン・汎用計算モジュール]
         M[<b>RDL_Durability_Modules</b><br>耐久検査・証明書発行機関]
+        G[<b>RDL_General_Modules</b><br>小規模・遊撃的な便利ツールボックス]
     end
 
     subgraph T3: Applications
@@ -51,10 +52,13 @@ RDLのすべての土台。基底仮設（B, ξ）、基本代謝プロセス（
 ### 3. [RDL_Durability_Modules](https://github.com/Aporapeiron/RDL_Durability_Modules) (T2)
 対象を極限状態に置いて耐久限界を測るテスト機関。RDL自体の「耐久検査（破断アタック）」の手法を隔離し、どこまで耐えたかの証明書を発行する。
 
-### 4. [RDL_Human](https://github.com/Aporapeiron/RDL_Human) (T3)
+### 4. [RDL_General_Modules](https://github.com/Aporapeiron/RDL_General_Modules) (T2)
+小規模だが便利そうな補助モジュールや、日々の分析でパッと使える思考のショートカット（テンプレート等）を気軽に配置・ストックしておくための遊撃的なツールボックス。
+
+### 5. [RDL_Human](https://github.com/Aporapeiron/RDL_Human) (T3)
 人間という特定の対象における「固有仮説」の実験場。4層時間スケール、SFO流向、笑いと快の放熱力学、道具結合のほか、心理学や経済学など**人類の「既知学問」をRDLの力学軸へ翻訳・マッピングしたツリー**を展開。
 
-### 5. [RDL_Music_Theory](https://github.com/Aporapeiron/RDL_Music_Theory) (T3)
+### 6. [RDL_Music_Theory](https://github.com/Aporapeiron/RDL_Music_Theory) (T3)
 音楽を「純粋な関係構造の推移」と「熱（H）の蓄積とカタルシス的放熱」の力学として再解剖する応用群。音の引力、和音の境界、リズムの同期をRDLで記述する。
 
 ---
