@@ -21,7 +21,7 @@ graph TD
     end
 
     subgraph T2: Modules
-        M[<b>RDL_Modules</b><br>耐久検査・対象非依存な抽出モジュール]
+        M[<b>RDL_Durability_Modules</b><br>耐久検査・対象非依存な抽出モジュール]
     end
 
     subgraph T3: Applications
@@ -43,7 +43,7 @@ graph TD
 RDLのすべての土台。基底仮設（B, ξ）、基本代謝プロセス（SILN）、共通語彙を保持するコア。
 ★ はじめての方は、ここにある [**関係力学言語とは如何なるものか（宣言）**](https://github.com/Aporapeiron/RDL_Core/blob/main/00_関係力学言語とは如何なるものか_宣言.md) からお読みください。
 
-### 2. [RDL_Modules](https://github.com/Aporapeiron/RDL_Modules) (T2)
+### 2. [RDL_Durability_Modules](https://github.com/Aporapeiron/RDL_Durability_Modules) (T2)
 対象に依存しない汎用的な力学構造（相転移、重力場、拘束度計算など）と、RDL自体の「耐久検査（破断アタック）」の手法を隔離・抽出したモジュール群。
 
 ### 3. [RDL_Human](https://github.com/Aporapeiron/RDL_Human) (T3)
