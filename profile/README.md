@@ -20,8 +20,12 @@ graph TD
         C[<b>RDL_Core</b><br>基底仮設・最低動作仕様・基本代謝] 
     end
 
+    subgraph T1.5: Functions (関数・翻訳層)
+        F[<b>RDL_Functions</b><br>外部理論の翻訳エンジン・汎用計算モジュール]
+    end
+
     subgraph T2: Modules
-        M[<b>RDL_Durability_Modules</b><br>耐久検査・対象非依存な抽出モジュール]
+        M[<b>RDL_Durability_Modules</b><br>耐久検査・証明書発行機関]
     end
 
     subgraph T3: Applications
@@ -29,8 +33,9 @@ graph TD
         Music[<b>RDL_Music_Theory</b><br>音楽理論の力学的解剖]
     end
 
-    C ==>|代謝公理の提供| M
-    M ==>|汎用ツールの提供| H & Music
+    C ==>|代謝公理の提供| F
+    F ==>|翻訳された部品群| M & H & Music
+    M ==>|耐久証明付きの構造| H & Music
     H -.->|破断・実験結果の還元| M
     Music -.->|特殊条件下での力学実証| M
 ```
@@ -43,13 +48,16 @@ graph TD
 RDLのすべての土台。基底仮設（B, ξ）、基本代謝プロセス（SILN）、共通語彙を保持するコア。
 ★ はじめての方は、ここにある [**関係力学言語とは如何なるものか（宣言）**](https://github.com/Aporapeiron/RDL_Core/blob/main/00_関係力学言語とは如何なるものか_宣言.md) からお読みください。
 
-### 2. [RDL_Durability_Modules](https://github.com/Aporapeiron/RDL_Durability_Modules) (T2)
-対象に依存しない汎用的な力学構造（相転移、重力場、拘束度計算など）と、RDL自体の「耐久検査（破断アタック）」の手法を隔離・抽出したモジュール群。
+### 2. [RDL_Functions](https://github.com/Aporapeiron/RDL_Functions) (T1.5)
+既存の数学、物理学、AI技術（Neural Network等）を RDL の力学へ持ち込み、どこでも使える「関数（部品）」としてストック・提供する純粋な翻訳エンジンおよび汎用モジュール庫。
 
-### 3. [RDL_Human](https://github.com/Aporapeiron/RDL_Human) (T3)
+### 3. [RDL_Durability_Modules](https://github.com/Aporapeiron/RDL_Durability_Modules) (T2)
+対象を極限状態に置いて耐久限界を測るテスト機関。RDL自体の「耐久検査（破断アタック）」の手法を隔離し、どこまで耐えたかの証明書を発行する。
+
+### 4. [RDL_Human](https://github.com/Aporapeiron/RDL_Human) (T3)
 人間という特定の対象における「固有仮説」の実験場。4層時間スケール、SFO流向、笑いと快の放熱力学、道具結合のほか、心理学や経済学など**人類の「既知学問」をRDLの力学軸へ翻訳・マッピングしたツリー**を展開。
 
-### 4. [RDL_Music_Theory](https://github.com/Aporapeiron/RDL_Music_Theory) (T3)
+### 5. [RDL_Music_Theory](https://github.com/Aporapeiron/RDL_Music_Theory) (T3)
 音楽を「純粋な関係構造の推移」と「熱（H）の蓄積とカタルシス的放熱」の力学として再解剖する応用群。音の引力、和音の境界、リズムの同期をRDLで記述する。
 
 ---
