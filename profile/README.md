@@ -17,19 +17,19 @@ Aporapeiron の全リポジトリは、独立したファイル置き場では�
 
 ```mermaid
 graph TD
-    subgraph T0/T1: The Core (日常式)
+    subgraph T0 ["T0/T1: The Core (日常式)"]
         Intro[<b>RDL_Introduction</b><br>エントランス・チュートリアル]
         Core[<b>RDL_Core</b><br>絶対公理・SILN操作プロトコル]
         Intro -->|T0基底仮設| Core
     end
 
-    subgraph T2: Operations (工場と監査)
+    subgraph T2 ["T2: Operations (工場と監査)"]
         Func[<b>RDL_Functions</b><br>翻訳・関数生成工場<br/>無限の境界 B の生産]
         Durab[<b>RDL_Durability_Modules</b><br>耐久検査・監査機関<br/>熱 H の注入と生存偏向テスト]
         Gen[<b>RDL_General_Modules</b><br>日常ユーティリティツール群]
     end
 
-    subgraph T3: Applications (現実への適用)
+    subgraph T3 ["T3: Applications (現実への適用)"]
         Lang[<b>RDL_Language (in Human)</b><br>言語・共有文脈モデル]
         Human[<b>RDL_Human</b><br>認知・社会モデル]
         Music[<b>RDL_Music_Theory</b><br>音楽理論モデル]
