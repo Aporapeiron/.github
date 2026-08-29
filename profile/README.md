@@ -36,7 +36,7 @@ graph TD
     end
 
     Core ==>|公理の提供| Func
-    Func ==>|新しい関数/レンズ| Durab
+    Func <==>|関数の提供 ⇔ 耐久検査| Durab
     Durab ==>|検査を生き残った強靭な B| Human & Lang & Music
     Human -.->|現場で溜まった熱 H・破断報告| Durab
     Music -.->|既存理論の限界報告| Durab
